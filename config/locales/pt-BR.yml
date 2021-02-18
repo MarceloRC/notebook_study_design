@@ -1,9 +1,37 @@
 "pt-BR":
   activerecord:
-    models:
-      contact: Contato
+  models:
+    contact:  "Contatos"
+    kind:     "Tipos de Contatos"
+    address:  "Endereços"
+    phone:    "Telefones"
+  address:
+    state:    "Estado"
+    city:     "Cidade"
+    street:   "Rua"
+    address_new:  "Criar Endereço"
   contact:
+    contact: "Contato"
     name:    "Nome"
     email:   "Email"
     kind:    "Tipo de Contato"
     rmk:     "OBS"
+    new_contact: "Criar Contato"
+    edit_contact: "Editar Contato"
+  phone:
+    phone:    "Telefones"
+    new_phone:  "Criar Telefone"
+  kind:
+    description:  "Descrição"
+    edit_kind:    "Editar Tipo de Contato"
+    new_kind:     "Criar Tipo de Contato"
+  buttons:
+    show:     "Mostrar"
+    edit:     "Editar"
+    destroy:  "Apagar"
+    new_contact: "Criar Contato"
+    send:     "Enviar"
+    back:     "Voltar"
+    save:     "Salvar"
+  menssages:
+    confirm: "Você tem certeza?"

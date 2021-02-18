@@ -8,7 +8,7 @@ namespace :utils do
                     name: Faker::Name.name,
                     email: Faker::Internet.email,
                     kind: Kind.all.sample,
-                    rmk: Faker::Name.name
+                    rmk: Faker::Lorem.sentence
     )
   end
   puts "OK"

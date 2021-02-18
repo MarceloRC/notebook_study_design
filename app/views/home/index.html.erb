@@ -1,8 +1,7 @@
 <h1>Seja Bem-Vindo!</h1>
-<h2><%= t('hello') %></h2>
 <ul>
-  <li><%= link_to "Tipos", kinds_path%></li>
-  <li><%= link_to "Contatos", contacts_path%></li>
-  <li><%= link_to "Endereços", addresses_path%></li>
-  <li><%= link_to "Telefons", phones_path%></li>
+  <li><%= link_to t('models.kind'), kinds_path%></li>
+  <li><%= link_to t('models.contact'), contacts_path%></li>
+  <li><%= link_to t('models.address'), addresses_path%></li>
+  <li><%= link_to t('models.phone'), phones_path%></li>
 </ul>

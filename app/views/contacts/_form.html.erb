@@ -10,44 +10,44 @@
       </ul>
     </div>
   <% end %>
-<h1>Contact</h1>
+<h1><%= t('contact.contact') %></h1>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label t('contact.name') %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
+    <%= form.label t('contact.email') %>
     <%= form.text_field :email %>
   </div>
 
   <div class="field">
-    <%= form.label :Kind %>
+    <%= form.label t('contact.kind') %>
     <%= form.collection_select(:kind_id, @kind_options_for_select, :id, :description) %>
   </div>
 
     <%= form.fields_for :address do |address| %>
       <div class="field">
-        <%= address.label :street %>
+        <%= address.label t('address.street') %>
         <%= address.text_area :street %>  
       </div>   
       <div class="field">
-        <%= address.label :city %> 
+        <%= address.label t('address.city') %> 
         <%= address.text_area :city %>  
       </div>
       <div class="field">
-        <%= address.label :state %>
+        <%= address.label t('address.state') %>
         <%= address.select :state, options_for_states(@contact.address.state) %>  
       </div>
     <% end %>
   <div class="field">
-    <%= form.label :rmk %>
+    <%= form.label t('contact.rmk') %>
     <%= form.text_area :rmk %>
   </div>
 
   <div class="actions">
-    <%= form.submit "Enviar", class: "button" %>
-    <%= link_to "Voltar", contacts_path, class: "button" %>
+    <%= form.submit t('buttons.send'), class: "button" %>
+    <%= link_to t('buttons.back'), contacts_path, class: "button" %>
   </div>
 <% end %>

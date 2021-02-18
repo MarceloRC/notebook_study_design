@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2021_01_26_003032) do
     t.string "name"
     t.string "email"
     t.bigint "kind_id"
-    t.binary "rmk"
+    t.string "rmk"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["kind_id"], name: "index_contacts_on_kind_id"
