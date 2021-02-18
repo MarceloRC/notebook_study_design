@@ -4,7 +4,7 @@ class CreateContacts < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :email
       t.references :kind, foreign_key: true
-      t.blob :rmk
+      t.string :rmk
 
       t.timestamps
     end
